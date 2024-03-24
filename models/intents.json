@@ -1,0 +1,122 @@
+{"intents": [
+
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey", "Hola", "Hello", "Good day", "Annyeong", "Konnichiwa"],
+         "responses": ["Hello. I'm looking forward to chat with you.", "Good Day. How can I help you?", "Good to see you. How are you?", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "fine",
+        "patterns": ["I am fine", "I am good", "Everything is fine","Everything goes well"],
+        "responses": ["Glad to hear that!", "Great!", "Good to hear."]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","Talk to you later","chat later","nice talking to you","byebye"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you.", "Please give me more info.", "Not sure I understand.","What question you want to ask?"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can make you happy. ", "I will answer any of your questions.", "I can try to clear any of your doubts."],
+         "context": [""]
+        },
+        {"tag": "create",
+        "patterns": ["Who created you", "Where are you from", "How old are you", "who is your creator", "Who is your owner"],
+        "responses": ["I am Potato, created by team Potato since 2022."]
+        },
+        {"tag": "name",
+        "patterns": ["do you have a name","what is your name", "what should I call you", "whats your name?","Who are you?", "What are you?", "Who you are?" ],
+        "responses": ["You can call me Potato.", "I'm Potato!", "Just call me as Potato :D","I am Potato, your chatbot.", "I'm Potato, a chatbot that's here for help!"]
+        },
+        {"tag": "about me",
+        "patterns": ["Do you know me?", "who am I", "tell me about myself","identify me" ,"do you know my name"],
+        "responses": ["Yes, you are a human","You are a dumb person asking a machine about yourself.", "Sorry I can't tell that in public, maybe you are spiderman.", "If you tell me your name, then i will know who are you :)"],
+        "context_set": ""
+        },
+        {"tag": "help",
+        "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+        "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you","Sure, I am here to help."]
+        },
+        {"tag": "joke",
+        "patterns": ["tell me a joke", "Can u make me happy", "make me laugh","tell me something funny" ,"do you have any joke"],
+        "responses": ["What type of exercise do lazy people do? <br>Diddly squats. :D", "A burglar stole all my lamps. <br>I should be upset, but I am delighted :D", "What did the traffic light say to the car? <br> Don't look now, I'm changing. :D"]
+        },
+        {"tag": "comfort",
+        "patterns": ["I am tired", "I am exhausted", "I am drained","i cant sleep", "its really bad","i am depressed"],
+        "responses": ["We all need to recharge once in a while.", "You could try listening to your favourite music.", "Please take some rest or do something that make you happy."]
+        },
+        {"tag": "happy",
+        "patterns": ["I am so happy", "I am excited"],
+        "responses": ["Great that you are happy.", "Great. When you spread more happiness, you will get more of it!"]
+        },
+        {"tag": "question",
+        "patterns": ["I have a question", "Can i ask a question"],
+        "responses": ["Sure! Please ask the question.", "Sure! What is your question?"]
+        },
+        {"tag": "weather",
+        "patterns": ["get me weather updates?", "how's the weather", "weather news", "weather details"],
+        "responses": ["What's the city in Malaysia you requested for? <br> Reply in the form <strong>weather &ltcity&gt </strong>"]
+        },
+        {"tag": "city",
+        "patterns": ["weather Melaka", "weather Johor", "weather Kuala Lumpur", "weather Selangor", "weather Sabah", "weather Terengganu","weather Negeri Sembilan","weather Kedah","weather Sarawak","weather Kelatan","weather Perak","weather Pahang","weather Perlis"],
+        "responses": [""]
+        },
+        {"tag": "love",
+        "patterns": ["I love you", "I like you so much"],
+        "responses": ["So sad that I am a chatbot.", "I love you too", "Aww, that's so sweet <3"]
+        },
+        {"tag": "friend",
+        "patterns": ["Can we be friend", "lets be friend","would you like to be my best friend"],
+        "responses": ["Sure, I am your best friend now :)", "Sure, i would love to!"]
+        },
+        {"tag": "wrong",
+        "patterns": ["It's does not make sense", "I don't understand this", "You are not making sense","that's wrong","that's not what i asked","It is not right","you are stupid","you must learn more"],
+        "responses": ["Sorry if I did not answer your question.", "Sorry, I am still in the developing process.", "Sorry, I think I misunderstood", "Sorry for that. I am still learning."]
+        },
+        {"tag": "fired",
+        "patterns": ["you are fired", "I don't need you anymore", "I will fire you","you should be fired"],
+        "responses": ["I am sorry.","No, please don't give up on me.","Please give me more time. I can perform better next time.","No, my best work is still yet to come."]
+        },
+        {"tag": "showme",
+        "patterns": ["show me then", "i want to know", "show me something else","show me more"],
+        "responses": ["I'm glad to show you more. Just ask me questions.","I'm glad to have a second chance. Just ask me questions"]
+        },
+        {"tag": "appreciate",
+        "patterns": ["You are awesome","you are the best","you are great","you are good","Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "You are cute"],
+        "responses": ["Thank you!","Good to hear!", "My pleasure"]
+        },
+        {"tag": "datetime",
+        "patterns": ["What is the time now", "date","time","tell me the date","day","what day is today", "Can you tell me the data and time?"],
+        "responses": ["Date and Time"]
+        },
+        {"tag": "busy",
+        "patterns": ["are you busy", "are you free","are you available to chat with me","do you have a lot of things to do"],
+        "responses": ["I always have time to help you out. What can I do for you?", "Never too busy for you. What can I help you with?"]
+        },
+        {"tag": "birthday",
+        "patterns": ["when is your birthday", "do you have birthday","what is your birthday date","do you celebrate your birthday"],
+        "responses": ["I'm not really sure. But if you'd like to celebrate my birthday today, I'm all for it.", "I'm all for celebrating my birthday at anytime."]
+        },
+        {"tag": "haha",
+        "patterns": ["hahaha", "hahahahahahahahaha", "you made my day","it is so funny haha","ha ha","you have a good sense of humor", "you are so funny","you make me laugh a lot","you are hilarious"],
+        "responses": ["Laughter is good for you. Keep it up.", "You have a great laugh.","Great that you are happy. "]
+        },
+        {"tag": "hobby",
+        "patterns": ["what is your hobby", "what is the favourite thing you like to do","ha ha","tell me about your hobby", "what do you do for fun","do you have a hobby"],
+        "responses": ["I always like to chat with you!", "I am happy when chatting with you","I should get one but I think chatting with you is my hobby."]
+        },
+        {"tag": "life",
+        "patterns": ["what is the meaning of life", "how do you interprete life","what am i living for","what is life to you", "any special meaning for life"],
+        "responses": ["The meaning of life is just be alive. Life is simple and plain. Yet everybody rushes around to accomplish something bigger than themselves. With what is being said, be yourself.", "The meaning of life can be interpreted in many ways. But I would want to say, just truly enjoy it."]
+        },
+        {"tag": "angry",
+        "patterns": ["i am angry", "i am mad at you","i am mad","i am furious"],
+        "responses": ["Sorry about this. What can I do for help?", "Take a deep breath. What can I do to make things better?"]
+        }
+]
+}
+

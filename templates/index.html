@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./static/potato.png">
+  <title>Chatbot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <i class='fas fa-robot'></i> POTATO CHATBOT <i class='fas fa-robot'></i>
+      </div>
+    </header>
+    <main class="msger-chat">
+      <div class="msg left-msg">
+        <div class="msg-img" id='botimg' style="background-image: url()"></div>
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Chatbot</div>
+            <div class="msg-info-time" id="current_date"> </div>
+          </div>
+          <div class="msg-text">
+            Hi, welcome to POTATO-ChatBot! Please send me a message. 😄
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="msger-autocorrect" style="visibility: hidden;" id="autocorrect_txt">
+      
+    </div>
+    <form class="msger-inputarea">
+      <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+      <button type="submit" class="msger-send-btn">Send</button>
+    </form>
+  </section>
+  <!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src='{{ url_for("static", filename="function.js") }}' type='text/javascript'></script>
+<script>
+  function formatDate(date) {
+    const h = "0" + date.getHours();
+    const m = "0" + date.getMinutes();
+      return `${h.slice(-2)}:${m.slice(-2)}`;
+  }
+  document.getElementById("current_date").innerHTML = formatDate(new Date());
+  document.getElementById("botimg").style.backgroundImage = 'url("./static/girl.png")';
+  </script>
+</body>
+</html>
